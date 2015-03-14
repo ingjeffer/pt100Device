@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_loopback2_details_CI485"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:textColor="#000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" 
+            android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp"
+   android:color="#CCCCCC"
+            
+            >
+
+            <DigitalClock
+                android:id="@+id/digitalClock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@+string/clock_default_string"
+                style="@style/smalltext"/>
+
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@+string/date_default_string"
+                style="@style/smalltext" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/doc_proc_label"
+            style="@style/smalltext"
+             />
+        
+         <TextView
+        android:id="@+id/value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:text="@+string/max_scale_val"
+        style="@style/bigtext"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tempsymbol_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@+string/pr_default_string"
+                style="@style/mediumtext"/>
+
+            <RadioGroup
+                android:id="@+id/tempscale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" >
+
+                <RadioButton
+                    android:id="@+id/celsiusradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@+string/Celsius"
+                    style="@style/smalltext" />
+
+                <RadioButton
+                    android:id="@+id/farenradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@+string/Fahrenheit"
+                    style="@style/smalltext" />
+
+                <RadioButton
+                    android:id="@+id/kelvinradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@+string/Kelvin"
+                    style="@style/smalltext" />
+
+                <RadioButton
+                    android:id="@+id/reaumurradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@+string/Reaumur"
+                    style="@style/smalltext" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/sensorType_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@+string/probe_type"
+                style="@style/mediumtext" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/value2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        style="@style/smalltext"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/milivoltString_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/milivoltValue_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tcRef_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@+string/iec_rule"
+            style="@style/smalltext" />
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+       
+        
+            <TextView
+                android:id="@+id/channelString_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channel" />
+		<EditText
+                android:id="@+id/channelnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+            
+            <Button android:id="@+id/gettemp_button"
+		 			android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+		 			android:gravity="center"
+		 			android:scaleType="centerInside"
+		 			android:background="@drawable/button_pattern"
+		 			android:layout_weight="1"
+		 			android:text="Leer"
+		 			/>	 
+ 
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/minValueString_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/min_scale_label"
+                style="@style/smalltext" />
+
+            <TextView
+                android:id="@+id/minValue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/min_scale_val"
+                style="@style/smalltext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/valueString_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/val_scale_label"
+                style="@style/smalltext" />
+
+            <TextView
+                android:id="@+id/valueSm_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/val_scale_val"
+                style="@style/smalltext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maxValueString_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/max_scale_label"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/maxValue_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/max_scale_val"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/companyStringName_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@+string/company_name"
+            style="@style/labeltext"
+             />
+
+        <TextView
+            android:id="@+id/devModel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@+string/model_name"
+            style="@style/labeltext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/minScale_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@+string/min_scale_val"
+            style="@style/labeltext" />
+
+        <TextView
+            android:id="@+id/maxScale_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@+string/max_scale_val"
+            style="@style/labeltext" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/website_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="@+string/company_url"
+        style="@style/labeltext" />
+
+</LinearLayout><!-- From: file:/home/electronic/AndroidstudioProjects/pt100Device/app/src/main/res/layout/elcont_ci_485_protocol.xml -->

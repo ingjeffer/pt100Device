@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/titles"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.elcont.pt100dev.FragmentLayout$TitlesFragment"
+        tools:layout="@android:layout/simple_list_item_activated_1" />
+
+    <FrameLayout
+        android:id="@+id/details"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="50" />
+
+</LinearLayout><!-- From: file:/home/electronic/AndroidstudioProjects/pt100Device/app/src/main/res/layout-large/fragment_layout.xml -->

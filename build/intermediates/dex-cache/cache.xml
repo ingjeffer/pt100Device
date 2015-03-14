@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/electronic/AndroidstudioProjects/pt100Device/app/libs/j2xx.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c9d8dd437e722f60d61bd88ceb779b7d71f67230">
+        <dex dex="/home/electronic/AndroidstudioProjects/pt100Device/app/build/intermediates/pre-dexed/debug/j2xx-2b9705992e7736ee6e17fd25ae5ce86ec64560f3.jar" />
+    </item>
+    <item
+        jar="/home/electronic/Aplicaciones/adt/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/home/electronic/AndroidstudioProjects/pt100Device/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-463943789f3006dd0ebcc3dc78381dbf785cc77e.jar" />
+    </item>
+    <item
+        jar="/home/electronic/AndroidstudioProjects/pt100Device/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/home/electronic/AndroidstudioProjects/pt100Device/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-34ec54e18ccc4a26db34d58168f71f0cb9785fe9.jar" />
+    </item>
+    <item
+        jar="/home/electronic/AndroidstudioProjects/pt100Device/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/home/electronic/AndroidstudioProjects/pt100Device/app/build/intermediates/pre-dexed/debug/classes-2d2f65295b4ac89e758f2cc9a9ea46be82168ba9.jar" />
+    </item>
+
+</items>
